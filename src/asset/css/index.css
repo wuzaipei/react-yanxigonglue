@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html,body,#root,.router{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+#root .swiper-button-next{
+    left: 46% !important;
+    bottom:0.2rem !important;
+    top: auto !important;
+    background-image: url(../img/top.png) !important;
+    background-size: auto;
+    margin-left: -0.13rem;
+    animation: webSwipeTipAfter 1.5s infinite ease-in-out;
+
+}
+
+@keyframes webSwipeTipAfter {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        opacity: 0
+    }
+}
+
+
+
+.StartScene{
+    width: 100%;
+    height: 100%;
+    background: url(../img/star.webp),url(../img/bg1.webp);
+    background-position: center bottom,center;
+    background-size: 100% auto,auto 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.StartScene>button{
+    width: 8rem;
+    height: 2.5rem;
+    background: url(../img/btn.webp);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 39%;
+    margin-left: -1.8rem;
+    bottom: 2.8rem;
+    border: none;
+    outline: none;
+}
+.StartScene>img{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: img1 1.5s ease-in-out 2 forwards;
+}
+
+@keyframes img1{
+     50% {
+         opacity: 1
+     }
+     100%{
+         opacity: 0;
+     }
+}
+
+/* 场景二 BriefScene */
+.BriefScene{
+    width: 100%;
+    height: 100%;
+    background: url(../img/gif.webp) ,url(../img/logo.webp),url(../img/flower.webp),url(../img/chengqiang.webp) ,url(../img/bg2.webp) ;
+    background-repeat: no-repeat;
+    background-size: 7rem 7rem,5rem auto,7rem auto,auto 7rem,auto;
+    background-position: center 7rem,right top,left top,left bottom,left;
+}
+.BriefScene>p{
+    font-size: 1rem;
+    width: 14rem;
+    position: absolute;
+    left: 29%;
+    margin-left: -2.8rem;
+    top: 15rem;
+}
+.BriefScene>button{
+    font-size: 1.5rem;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    line-height: 3rem;
+    background: url(../img/btn2.webp) !important;
+    background-size: 100% 100% !important;
+    position: absolute;
+    left: 30%;
+    margin-left: -1.5rem;
+    top: 25rem;
+    border: none;
+    z-index: 1;
+    outline: none;  /* 鼠标点击边框去掉*/
+}
+
+
+/* 场景三 答题场景， */
+.AnswerScene{
+    width: 100%;
+    height: 100%;
+    background: url(../img/logo.webp),url(../img/flower.webp) ,url(../img/bg2.webp) ;
+    background-repeat: no-repeat;
+    background-size: 5rem auto,7rem auto,auto;
+    background-position: right top,left top,left;
+}
+.AnswerScene>p{
+    font-size: 1.4rem;
+    width: 14rem;
+    position: absolute;
+    left: 29%;
+    margin-left: -2.8rem;
+    top: 8rem;
+}
+.AnswerScene>button:nth-child(2){
+    width: 10rem;
+    height: 3rem;
+    background: url(../img/blankbtn.webp) !important;
+    background-size: 100% 100% !important;
+    position: absolute;
+    left: 30%;
+    margin-left: -1.5rem;
+    top: 15rem;
+    border: none;
+    z-index: 1;
+    outline: none;  /* 鼠标点击边框去掉*/
+}
+.AnswerScene>button:nth-child(3){
+    width: 10rem;
+    height: 3rem;
+    background: url(../img/blankbtn.webp) !important;
+    background-size: 100% 100% !important;
+    position: absolute;
+    left: 30%;
+    margin-left: -1.5rem;
+    top: 19rem;
+    border: none;
+    z-index: 1;
+    outline: none;  /* 鼠标点击边框去掉*/
+}
+.AnswerScene>button:nth-child(4){
+    width: 10rem;
+    height: 3rem;
+    background: url(../img/blankbtn.webp) !important;
+    background-size: 100% 100% !important;
+    position: absolute;
+    left: 30%;
+    margin-left: -1.5rem;
+    top: 23rem;
+    border: none;
+    z-index: 1;
+    outline: none;  /* 鼠标点击边框去掉*/
+}
+
+/* 场景四得分场景 *//* 场景4：结果场景 */
+.ResultScene{
+    /* font-size: 0.3rem; */
+    width: 100%;
+    height: 100%;
+    background:  url(../img/logo.webp) no-repeat, url(../img/flower.webp) no-repeat, url(../img/bg2.webp) no-repeat 100% 100%;
+    background-size:  2rem auto, 5rem auto, auto;
+    background-position:  right top, left top, left;
+    text-align: center;
+    padding-top: 4rem;
+}
